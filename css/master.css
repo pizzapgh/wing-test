@@ -1,0 +1,81 @@
+
+html{
+ font-family: 'Knewave', cursive;
+font-family: 'Patrick Hand', cursive;
+  font-weight: 200;
+  letter-spacing: 0.09em;
+}
+p{
+   line-height: 1.5em;
+  text-transform: capitalize;
+}
+a{
+  color: #fff;
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+.top-bar,
+.bottom-bar{
+  background: url("https://image.ibb.co/mdnYxv/top_bar.png");
+  background-size: cover;
+  background-position: 50%;
+  padding: 1em 0;
+}
+.logo,
+.social{
+  display: none;
+}
+.menu li{
+   font-family: 'Knewave', cursive;
+   color: #fff;
+}
+.menu li:nth-last-of-type(1){
+  display: none;
+}
+.menu,
+.sub-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sub-menu{
+  font-family: 'Patrick Hand', cursive;
+}
+.sub-menu img{
+  vertical-align: middle;
+  width: 115px;
+}
+.container{
+  width: 90%;
+  margin: auto;
+}
+.sub-menu-text{
+  display: none;
+}
+.slide-home{
+  background: #f12d2d;
+  position: relative;
+  height: 82vh;
+}
+.home-logo{
+  padding-top: 25rem;
+}
+.fa-chevron-down{
+ position: absolute;
+ bottom: 320px;
+ left: 0;
+ right: 0;
+ color: #fff;
+ font-size: 5rem;
+}
+.menu li{
+  font-size: 4rem;
+}
+.center{
+  dispaly: flex;
+  align-items: center;
+  text-align: center;
+}
