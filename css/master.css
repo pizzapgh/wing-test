@@ -19,22 +19,32 @@ ul{
   margin: 0;
 }
 .menu li{
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .buttons a {
   background: #f12d2d;
   margin: 0.6rem;
   color: white;
-  padding: 0.5rem 0.1rem;
+    padding: 0.4rem 0.1rem;
   text-decoration: none;
   flex-grow: 1;
       text-align: center;
-      width: 200px;
+      width: 100px;
+      font-size: 0.7rem;
 }
 .specials-box p{
   color: #fff;
   padding: 0.5rem 3rem;
   margin: 0;
+  font-size: 0.8rem;
+}
+.specials-box{
+  background: url("../image/box-bg.png");
+  max-height: 82vh;
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  text-align: center;
 }
 .specials-box h2{
   font-family: 'Knewave', cursive;
@@ -49,12 +59,12 @@ text-align: center;
    font-family: 'Knewave', cursive;
    color: #f68a1e;
    margin: 0;
-   font-size: 1.5rem;
+   font-size: 1.2rem;
 }
 
 .sub-menu img{
   vertical-align: middle;
-  width: 65px;
+  width: 30px;
 }
 
 @media (min-width: 425px){
@@ -168,7 +178,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 94vh;
+  min-height: 96vh;
 }
 .box::after{
   font-family: FontAwesome;
@@ -186,14 +196,7 @@ specials
 .star{
   display: none;
 }
-.specials-box{
-  background: url("../image/box-bg.png");
-  max-height: 82vh;
-  width: 100%;
-  padding: 1rem;
-  box-sizing: border-box;
-  text-align: center;
-}
+
 
 .buttons{
   margin: 10px auto;
@@ -235,7 +238,7 @@ margin: auto;
       flex: 1;
     }
     .sub-menu img{
-      width: 70px;
+      width: 60px;
       margin-right: 1rem;
     }
     .sub-menu-text{
