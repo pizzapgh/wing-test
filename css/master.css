@@ -1,10 +1,10 @@
-
 html{
  font-family: 'Knewave', cursive;
 font-family: 'Patrick Hand', cursive;
   font-weight: 200;
   letter-spacing: 0.09em;
 }
+
 p{
    line-height: 1.5em;
   text-transform: capitalize;
@@ -16,6 +16,98 @@ a{
 ul{
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+.menu li{
+  font-size: 1.5rem;
+}
+.buttons a {
+  background: #f12d2d;
+  margin: 0.6rem;
+  color: white;
+  padding: 0.5rem 0.1rem;
+  text-decoration: none;
+  flex-grow: 1;
+      text-align: center;
+      width: 200px;
+}
+.specials-box p{
+  color: #fff;
+  padding: 0.5rem 3rem;
+  margin: 0;
+}
+.specials-box h2{
+  font-family: 'Knewave', cursive;
+text-transform: uppercase;
+color: #fff;
+margin: 0;
+font-size: 4rem;
+text-align: center;
+
+}
+.specials-box h3{
+   font-family: 'Knewave', cursive;
+   color: #f68a1e;
+   margin: 0;
+   font-size: 1.5rem;
+}
+
+.sub-menu img{
+  vertical-align: middle;
+  width: 65px;
+}
+
+@media (min-width: 425px){
+  .menu li{
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px){
+  .menu li{
+    font-size: 2.5rem;
+  }
+.specials-box h2{
+    font-size: 8rem;
+  }
+}
+@media (min-width: 1024px){
+  .menu li{
+    font-size: 2rem;
+  }
+.specials-box h2{
+    font-size: 7rem;
+    margin-bottom: 1rem;
+  }
+  .specials-box h3{
+      margin-top: 1rem;
+    }
+    .buttons{
+      padding: 0rem 3.6rem;
+      }
+}
+@media (min-width: 1440px){
+.buttons{
+  padding: 0rem 6rem;
+  }
+}
+
+
+/* typography
+--------------------*/
+
+.social a{
+  color: #f68a1e;
+}
+.top-bar{
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+header{
+  position: relative;
+  background: url("../image/home-bg.png");
+  min-height: 100vh;
+  overflow: hidden;
 }
 .top-bar,
 .bottom-bar{
@@ -23,6 +115,13 @@ ul{
   background-size: cover;
   background-position: 50%;
   padding: 1em 0;
+  z-index: 3;
+}
+.bottom-bar{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .logo,
 .social{
@@ -32,7 +131,7 @@ ul{
    font-family: 'Knewave', cursive;
    color: #fff;
 }
-.menu li:nth-last-of-type(1){
+.menu li:nth-last-of-type(4){
   display: none;
 }
 .menu,
@@ -44,10 +143,7 @@ ul{
 .sub-menu{
   font-family: 'Patrick Hand', cursive;
 }
-.sub-menu img{
-  vertical-align: middle;
-  width: 115px;
-}
+
 .container{
   width: 90%;
   margin: auto;
@@ -55,27 +151,149 @@ ul{
 .sub-menu-text{
   display: none;
 }
-.slide-home{
-  background: #f12d2d;
-  position: relative;
-  height: 82vh;
-}
+
 .home-logo{
-  padding-top: 25rem;
+    padding-bottom: 5rem;
+      width: 660px;
 }
-.fa-chevron-down{
- position: absolute;
- bottom: 320px;
- left: 0;
- right: 0;
- color: #fff;
- font-size: 5rem;
-}
-.menu li{
-  font-size: 4rem;
-}
+
 .center{
-  dispaly: flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
 }
+.hold{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 94vh;
+}
+.box::after{
+  font-family: FontAwesome;
+  content:"\f078";
+  display: block;
+  font-size: 4rem;
+  color: #fff;
+  text-align: center;
+}
+
+/*
+specials
+--------------------*/
+
+.star{
+  display: none;
+}
+.specials-box{
+  background: url("../image/box-bg.png");
+  max-height: 82vh;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.buttons{
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+}
+
+
+@media screen and (min-width: 1024px){
+  .home-logo{
+    padding-bottom: 1rem;
+    width: 620px;
+    }
+    .star{
+      display: flex;
+      position: absolute;
+      left: -198px;
+      top: 50px;
+      height:100vh;
+      z-index: 2;
+    }
+    .specials-box{
+  position: absolute;
+  right: -49px;
+  top: 180px;
+  z-index: 3;
+  padding: 2.5rem 1rem;
+  width: 57%;
+    }
+
+    .hold{
+  width: 1045px;
+margin: auto;
+    }
+    .sub-menu{
+      flex: 1;
+    }
+    .sub-menu img{
+      width: 70px;
+      margin-right: 1rem;
+    }
+    .sub-menu-text{
+      display: flex;
+      display: inline-block;
+    }
+  .menu li:nth-last-of-type(4){
+    display: inline-block;
+  }
+  .container{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo,
+  .social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo{
+    flex: 0.4;
+  }
+  .social{
+      flex: 0.2;
+      margin-left: 3rem;
+  }
+  .menu{
+    flex: 1;
+  }
+  .buttons a{
+    background: #f12d2d;
+padding: 0.5rem 0.2rem;
+margin: 0.5rem;
+color: white;
+text-decoration: none;
+  }
+}
+  @media screen and (min-width: 1400px){
+    .hold{
+  width: 1200px;
+margin: auto;
+    }
+    .star{
+      left: -242px;
+      top: 45px;
+      z-index: 2;
+    }
+    .specials-box{
+      right: -29px;
+top: 180px;
+      }
+}
+
+
+
+
+/*
+font-sizes
+--------------------*/
