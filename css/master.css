@@ -23,18 +23,18 @@ ul{
 }
 .buttons a {
   background: #f12d2d;
-  margin: 0.3rem;
+  margin: 0.4rem;
   color: white;
-    padding: 0.4rem 0.1rem;
+  padding: 0.2rem 0.1rem;
   text-decoration: none;
   flex-grow: 1;
-      text-align: center;
-      width: 100px;
-      font-size: 0.7rem;
+  text-align: center;
+  width: 100px;
+  font-size: 0.7rem;
 }
 .specials-box p{
   color: #fff;
-  padding: 0.3rem 3rem;
+  padding: 0.3rem 1rem;
   margin: 0;
   font-size: 0.8rem;
 }
