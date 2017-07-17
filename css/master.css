@@ -21,6 +21,11 @@ ul{
 .menu li{
   font-size: 1rem;
 }
+.home-logo{
+    padding-bottom: 5rem;
+    width: 364px;
+    margin-top: 2rem;
+}
 .buttons{
   margin: 10px auto;
 display: flex;
@@ -229,10 +234,7 @@ header{
   display: none;
 }
 
-.home-logo{
-    padding-bottom: 5rem;
-      width: 660px;
-}
+
 
 .center{
   display: flex;
@@ -351,6 +353,11 @@ margin: auto;
     .specials-box{
       right: -29px;
 top: 190px;
+      }
+      .home-logo{
+          padding-bottom: 5rem;
+          width: 764px;
+          margin-top: 2rem;
       }
 }
 
